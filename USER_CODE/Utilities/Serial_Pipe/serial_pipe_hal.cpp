@@ -120,7 +120,7 @@ if(UartHandle->Instance == detector_board.huart->Instance)
 	
 	
 }
-/* Get data from the board that connect to UART 5 */
+/* Get data from the board that connect to UART 6 */
 Std_ReturnType UART6_GetData(uint8_t * buffer, uint8_t * len, uint32_t Timeout)
 {
 //	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3); //Request for data

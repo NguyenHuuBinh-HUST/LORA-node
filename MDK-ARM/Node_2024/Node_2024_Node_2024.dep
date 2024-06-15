@@ -1,7 +1,7 @@
 Dependencies for Project 'Node_2024', Target 'Node_2024': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\v5
-F (startup_stm32f407xx.s)(0x666715BF)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ../Inc-I.\RTE\_Node_2024-IC:\Users\ByNG\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ByNG\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o node_2024\startup_stm32f407xx.o --depend node_2024\startup_stm32f407xx.d)
-F (..\Src\main.c)(0x666716EC)(--cpp -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../USER_CODE/Adapter -I ../USER_CODE/Adapter/Common -I ../USER_CODE/Drivers/Modules/Rtc_User -I ../USER_CODE/Drivers/Devices/Sx127x -I ../USER_CODE/Middlewares/Base -I ../USER_CODE/Utilities/Data_Queue/CircularBuffer_FIFO -I ../USER_CODE/Utilities/Debug/SerialType1 -I ../USER_CODE/Utilities/Debug/SerialType2 -I ../USER_CODE/Utilities/Serial_Pipe -I ../USER_CODE/Utilities/Timer_Queue -I ../USER_CODE/Apps/LoRaMac_Node -I ../USER_CODE/Apps/Tasks -I ../USER_CODE/Misc/Systime -I ../USER_CODE/Misc -I ../USER_CODE/ -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS-I.\RTE\_Node_2024-IC:\Users\ByNG\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ByNG\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o node_2024\main_1.o --omf_browse node_2024\main_1.crf --depend node_2024\main_1.d)
+F (startup_stm32f407xx.s)(0x666941A9)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ../Inc-I.\RTE\_Node_2024-IC:\Users\ByNG\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ByNG\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o node_2024\startup_stm32f407xx.o --depend node_2024\startup_stm32f407xx.d)
+F (..\Src\main.c)(0x666941F8)(--cpp -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../USER_CODE/Adapter -I ../USER_CODE/Adapter/Common -I ../USER_CODE/Drivers/Modules/Rtc_User -I ../USER_CODE/Drivers/Devices/Sx127x -I ../USER_CODE/Middlewares/Base -I ../USER_CODE/Utilities/Data_Queue/CircularBuffer_FIFO -I ../USER_CODE/Utilities/Debug/SerialType1 -I ../USER_CODE/Utilities/Debug/SerialType2 -I ../USER_CODE/Utilities/Serial_Pipe -I ../USER_CODE/Utilities/Timer_Queue -I ../USER_CODE/Apps/LoRaMac_Node -I ../USER_CODE/Apps/Tasks -I ../USER_CODE/Misc/Systime -I ../USER_CODE/Misc -I ../USER_CODE/ -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS-I.\RTE\_Node_2024-IC:\Users\ByNG\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ByNG\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o node_2024\main_1.o --omf_browse node_2024\main_1.crf --depend node_2024\main_1.d)
 I (../Inc/main.h)(0x6663281B)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x660D868D)
 I (../Inc/stm32f4xx_hal_conf.h)(0x664F68BC)
@@ -108,7 +108,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x660D868D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x660D868D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x660D868D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x660D868D)
-F (../Src/freertos.c)(0x666491E6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../USER_CODE/Adapter -I ../USER_CODE/Adapter/Common -I ../USER_CODE/Drivers/Modules/Rtc_User -I ../USER_CODE/Drivers/Devices/Sx127x -I ../USER_CODE/Middlewares/Base -I ../USER_CODE/Utilities/Data_Queue/CircularBuffer_FIFO -I ../USER_CODE/Utilities/Debug/SerialType1 -I ../USER_CODE/Utilities/Debug/SerialType2 -I ../USER_CODE/Utilities/Serial_Pipe -I ../USER_CODE/Utilities/Timer_Queue -I ../USER_CODE/Apps/LoRaMac_Node -I ../USER_CODE/Apps/Tasks -I ../USER_CODE/Misc/Systime -I ../USER_CODE/Misc -I ../USER_CODE/ -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS-I.\RTE\_Node_2024-IC:\Users\ByNG\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ByNG\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o node_2024\freertos.o --omf_browse node_2024\freertos.crf --depend node_2024\freertos.d)
+F (../Src/freertos.c)(0x666941A6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../USER_CODE/Adapter -I ../USER_CODE/Adapter/Common -I ../USER_CODE/Drivers/Modules/Rtc_User -I ../USER_CODE/Drivers/Devices/Sx127x -I ../USER_CODE/Middlewares/Base -I ../USER_CODE/Utilities/Data_Queue/CircularBuffer_FIFO -I ../USER_CODE/Utilities/Debug/SerialType1 -I ../USER_CODE/Utilities/Debug/SerialType2 -I ../USER_CODE/Utilities/Serial_Pipe -I ../USER_CODE/Utilities/Timer_Queue -I ../USER_CODE/Apps/LoRaMac_Node -I ../USER_CODE/Apps/Tasks -I ../USER_CODE/Misc/Systime -I ../USER_CODE/Misc -I ../USER_CODE/ -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS-I.\RTE\_Node_2024-IC:\Users\ByNG\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ByNG\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o node_2024\freertos.o --omf_browse node_2024\freertos.crf --depend node_2024\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x660D8627)
 I (C:\Keil_v5\ARM\v5\include\stddef.h)(0x5E8E4AD2)
 I (C:\Keil_v5\ARM\v5\include\stdint.h)(0x5E8E4AD2)
@@ -2403,6 +2403,68 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x660D868D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x660D868D)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x660D868D)
 F (..\USER_CODE\Utilities\Debug\SerialType2\Serial_Debug.h)(0x666332C2)()
+F (..\USER_CODE\Drivers\Devices\Sensor_SerialPipe\sensor_serial_hal.cpp)(0x66694232)(--cpp -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../USER_CODE/Adapter -I ../USER_CODE/Adapter/Common -I ../USER_CODE/Drivers/Modules/Rtc_User -I ../USER_CODE/Drivers/Devices/Sx127x -I ../USER_CODE/Middlewares/Base -I ../USER_CODE/Utilities/Data_Queue/CircularBuffer_FIFO -I ../USER_CODE/Utilities/Debug/SerialType1 -I ../USER_CODE/Utilities/Debug/SerialType2 -I ../USER_CODE/Utilities/Serial_Pipe -I ../USER_CODE/Utilities/Timer_Queue -I ../USER_CODE/Apps/LoRaMac_Node -I ../USER_CODE/Apps/Tasks -I ../USER_CODE/Misc/Systime -I ../USER_CODE/Misc -I ../USER_CODE/ -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS-I.\RTE\_Node_2024-IC:\Users\ByNG\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ByNG\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o node_2024\sensor_serial_hal.o --omf_browse node_2024\sensor_serial_hal.crf --depend node_2024\sensor_serial_hal.d)
+I (C:\Keil_v5\ARM\v5\include\stdio.h)(0x5E8E4AD2)
+I (../USER_CODE/Adapter/Common/common.h)(0x662A7611)
+I (../USER_CODE/Adapter/Common/version.h)(0x6058C1C8)
+I (C:\Keil_v5\ARM\v5\include\stdint.h)(0x5E8E4AD2)
+I (C:\Keil_v5\ARM\v5\include\stddef.h)(0x5E8E4AD2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x660D868D)
+I (../Inc/stm32f4xx_hal_conf.h)(0x664F68BC)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x660D868D)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x660D8621)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x660D8621)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x660D8623)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x660D8623)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x660D8623)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x660D8623)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x660D8623)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x660D8621)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_iwdg.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x660D868D)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x660D868D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x660D8627)
+I (../Inc/FreeRTOSConfig.h)(0x663A0CDC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x660D8628)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x660D8627)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x660D8627)
+I (../Inc/usart.h)(0x661BB375)
+I (../Inc/main.h)(0x6663281B)
+I (../USER_CODE/Adapter/systick_driver.h)(0x6058C1C7)
+I (..\USER_CODE\Drivers\Devices\Sensor_SerialPipe\sensor_serial_hal.h)(0x6058C1C8)
+I (../USER_CODE/Utilities/Serial_Pipe/serial_pipe_hal.h)(0x6665D791)
+I (../USER_CODE/Utilities/Serial_Pipe/pipe_hal.h)(0x6665E643)
+I (C:\Keil_v5\ARM\v5\include\string.h)(0x5E8E4AD2)
+I (../USER_CODE/Middlewares/Base/Std_Types.h)(0x6058C1C8)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x660D8627)
+F (..\USER_CODE\Drivers\Devices\Sensor_SerialPipe\sensor_serial_hal.h)(0x6058C1C8)()
 F (..\USER_CODE\Misc\Misc.c)(0x663B9BFE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../USER_CODE/Adapter -I ../USER_CODE/Adapter/Common -I ../USER_CODE/Drivers/Modules/Rtc_User -I ../USER_CODE/Drivers/Devices/Sx127x -I ../USER_CODE/Middlewares/Base -I ../USER_CODE/Utilities/Data_Queue/CircularBuffer_FIFO -I ../USER_CODE/Utilities/Debug/SerialType1 -I ../USER_CODE/Utilities/Debug/SerialType2 -I ../USER_CODE/Utilities/Serial_Pipe -I ../USER_CODE/Utilities/Timer_Queue -I ../USER_CODE/Apps/LoRaMac_Node -I ../USER_CODE/Apps/Tasks -I ../USER_CODE/Misc/Systime -I ../USER_CODE/Misc -I ../USER_CODE/ -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS-I.\RTE\_Node_2024-IC:\Users\ByNG\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ByNG\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o node_2024\misc.o --omf_browse node_2024\misc.crf --depend node_2024\misc.d)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x660D8621)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x660D8621)

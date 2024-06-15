@@ -62,6 +62,7 @@
 "node_2024\task_watchdog.o"
 "node_2024\debug_hal.o"
 "node_2024\serial_debug.o"
+"node_2024\sensor_serial_hal.o"
 "node_2024\misc.o"
 "node_2024\serial_pipe_hal.o"
 --library_type=microlib --strict --scatter "Node_2024\Node_2024.sct"

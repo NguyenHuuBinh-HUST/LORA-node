@@ -14,7 +14,7 @@ char UART4_RX_Data;
 
 void HW_UART4_Init(void)
 {
-	MX_USART4_UART_Init();
+	MX_UART4_Init();
 	
   //Start UART
   __HAL_UART_FLUSH_DRREGISTER(&huart4);

@@ -416,8 +416,6 @@ static void LoRa_MainProcess(void)
 	
 	while(1)
 	{
-
-
 		switch(lps)
 		{
 			case LoRaSV_STATE_TX:
