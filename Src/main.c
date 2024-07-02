@@ -19,12 +19,14 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "adc.h"
 #include "iwdg.h"
 #include "rng.h"
 #include "rtc.h"
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
+
 
 #include <stdio.h>
 #include <string.h>
@@ -38,6 +40,7 @@
 #include "task_LoRa.h"
 #include "task_watchdog.h"
 #include "task_InterBoard.h"
+#include "sensorAnalog.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -113,7 +116,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
-  MX_USART2_UART_Init();
   MX_SPI2_Init();
   MX_RTC_Init();
   MX_SPI1_Init();
@@ -123,6 +125,7 @@ int main(void)
   MX_UART5_Init();
   MX_USART3_UART_Init();
   MX_USART6_UART_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
 	Set_Default_System_Config();

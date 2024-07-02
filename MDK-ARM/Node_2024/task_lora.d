@@ -28,6 +28,9 @@ node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 node_2024\task_lora.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -78,3 +81,4 @@ node_2024\task_lora.o: ../USER_CODE/Apps/LoRaMac_Node/LoRaMac_Node_Types.h
 node_2024\task_lora.o: ../USER_CODE/Apps/LoRaMac_Node/./cfg/LoRaMac_Node_Cfg.h
 node_2024\task_lora.o: ../USER_CODE/Apps/LoRaMac_Node/LoRaMac_Node_Types.h
 node_2024\task_lora.o: ..\USER_CODE\Apps\Tasks\task_LoRa.h
+node_2024\task_lora.o: ../Inc/adc.h

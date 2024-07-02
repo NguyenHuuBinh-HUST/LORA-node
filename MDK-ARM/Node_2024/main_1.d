@@ -23,6 +23,9 @@ node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 node_2024\main_1.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -50,6 +53,7 @@ node_2024\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 node_2024\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 node_2024\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 node_2024\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+node_2024\main_1.o: ../Inc/adc.h
 node_2024\main_1.o: ../Inc/iwdg.h
 node_2024\main_1.o: ../Inc/rng.h
 node_2024\main_1.o: ../Inc/rtc.h
@@ -69,3 +73,4 @@ node_2024\main_1.o: ../USER_CODE/Apps/Tasks/task_watchdog.h
 node_2024\main_1.o: ../USER_CODE/Apps/Tasks/task_InterBoard.h
 node_2024\main_1.o: ../USER_CODE/Middlewares/Base/Std_Types.h
 node_2024\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+node_2024\main_1.o: ../USER_CODE/Apps/Tasks/sensorAnalog.h

@@ -15,6 +15,7 @@
 #include "sx127x.h"
 #include "LoRaMac_Node.h"
 #include "task_LoRa.h"
+#include "adc.h"
 
 /* ====================================================================== */
 
@@ -53,8 +54,7 @@
 #endif
 
 extern RNG_HandleTypeDef hrng;
-float mq135Value;
-float gp2yValue;
+
 
 ExtBoard_t detector_board = {
 	&huart6, \
@@ -83,7 +83,7 @@ uint16_t cur_fcnt =0;     // Current frame cnt variable
 
 
 LoRaSV_PROCESS_STATE_t lps = LoRaSV_STATE_SLEEP;
-
+extern uint32_t adcValue;
 extern Sx127x_t sx127x_node;
 
 extern LoRaMacMessageData_t tx_msg; // Tx Msg Instance
@@ -92,6 +92,8 @@ extern uint8_t Uart5_Rx_data[2];
 extern uint8_t Uart5_Rx_Buffer[100];
 
 extern uint8_t Uart5_Rx_indx;
+
+extern char sensor_Buffer[20];
 
 //extern CircularBuffer_t rx_lora_cirbuf; // Circular Buffer Instance for Rx
 
@@ -117,7 +119,14 @@ static Std_ReturnType LoRaNodeSV_ReceiveData_Normal
  Sx127x_t *sx127x, uint8_t *rx_buffer, \
  uint8_t *len_rx, uint16_t timeout
 );
+/***********Bai Rac*****************/
+uint32_t Read_ADC_Value(void);
+float Convert_ADC_To_Voltage(uint32_t adcValue);
+float Convert_Vol_To_Turbidity(uint32_t vol);
+static void Float_To_String(float value, char* buffer);
+static void get_ADC_Value();
 
+/***********End Bai Rac*****************/
 static void LoRa_Service(void const * arg);
 	
 static void LoRa_MainProcess(void);
@@ -128,11 +137,12 @@ static Std_ReturnType LoRaSV_SendACK(void);
 
 static void DetectorBuff_Reset(void);
 
- static uint32_t flash_read(uint32_t address);
+static uint32_t flash_read(uint32_t address);
 
- static void flash_write(uint32_t address, uint32_t data);
+static void flash_write(uint32_t address, uint32_t data);
+
+void CreateDatapackage( void );
 /* ====================================================================== */
-
 
 
 static uint32_t flash_read(uint32_t address){
@@ -482,17 +492,12 @@ static void LoRa_MainProcess(void)
 //				DEBUG_USER("\r\n");
 				
 				//========================================= Code by Vuldl =======================================
+				get_ADC_Value();
+				memcpy(tx_buffer, sensor_Buffer,  sizeof(sensor_Buffer));
 				
-				//memcpy(tx_buffer, detector_board.rxTmp, detector_board.dataLen);
-				//sprintf(cmd_send, "%f, %f\r\n", gp2yValue, mq135Value);
 				
-				//memcpy(tx_buffer, cmd_send, detector_board.dataLen);
+				//memcpy(tx_buffer, Uart5_Rx_Buffer, detector_board.dataLen);
 				
-				memcpy(tx_buffer, Uart5_Rx_Buffer, detector_board.dataLen);
-				//sprintf((char *)(tx_buffer+strlen((char*)tx_buffer)),",%d:%d:%d",(GPS.GPGGA.UTC_Hour), \
-				                                                                    (GPS.GPGGA.UTC_Min),(GPS.GPGGA.UTC_Sec));
-////				sprintf((char *)(tx_buffer+strlen((char*)tx_buffer))," %f,%f",(float)(GPS.GPGGA.LatitudeDecimal), \
-////				                                                                    (float)(GPS.GPGGA.LongitudeDecimal));
 				DEBUG_USER("%s\r\n",tx_buffer);
 				
 				/* Get Counter from Flash */
@@ -646,12 +651,45 @@ static void LoRa_MainProcess(void)
 				}
 				state_init = 0;
 			}
-				HAL_UART_Receive_IT(detector_board.huart,(uint8_t *)detector_board.rxTmp,1); // Enable uart receive interupt
-				/* Set MCU in standby mode*/
+				//HAL_UART_Receive_IT(detector_board.huart,(uint8_t *)detector_board.rxTmp,1); // Enable uart receive interupt
+				HAL_Delay(30000);
+				lps = LoRaSV_STATE_TX;
+			/* Set MCU in standby mode*/
 				//enter_Standby();
 					
 					
 			}
 		}
 	}
+}
+
+/***********Bai Rac*****************/
+
+
+void get_ADC_Value(){
+		adcValue = Read_ADC_Value();
+		float voltage = Convert_ADC_To_Voltage(adcValue);
+		float turbidity = Convert_Vol_To_Turbidity(voltage);
+		Float_To_String(turbidity, sensor_Buffer);
+		
+}
+
+uint32_t Read_ADC_Value(void) {
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+    uint32_t adcValue = HAL_ADC_GetValue(&hadc1);
+    HAL_ADC_Stop(&hadc1);
+
+    return adcValue;
+}
+float Convert_ADC_To_Voltage(uint32_t adcValue) {
+    float voltage = (adcValue * 5) / 1023.0;
+    return voltage;
+}
+float  Convert_Vol_To_Turbidity(uint32_t vol){
+		float turb = -1120.4*vol*vol+5742.3*vol-4352.9;
+		return turb;
+}
+void Float_To_String(float value, char* buffer) {
+	sprintf(buffer, "turbidity: %.2f", value);
 }
